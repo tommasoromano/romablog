@@ -1,13 +1,21 @@
 import Link from 'next/link'
+import Typography from './typography'
+import ToggleTheme from './toggle-theme'
+import Stack from './stack'
+import ReadingSlider from './reading-slider'
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/" className="hover:underline">
-        Blog
-      </Link>
-      .
-    </h2>
+    <>
+    <div className='w-full h-28 justify-center items-center flex'>
+    <Stack direction="row" justify='center' spacing={4}>
+      <Typography variant="h1" component="h1" color="primary">
+        <Link href={'/'}>romablog</Link>
+      </Typography>
+      <ToggleTheme className='w-6 h-6 text-secondary-light dark:text-secondary-dark' />
+    </Stack>
+    </div>
+    </>
   )
 }
 

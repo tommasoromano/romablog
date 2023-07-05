@@ -1,42 +1,47 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
  
-    // Or if using `src` directory:ƒ
+    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
+    extend: {},
+    colors: {
+      'primary-dark': {
+        DEFAULT: '#3BBEF8', // background
+        'content': '#FFFFFF', // foreground
       },
-      spacing: {
-        28: '7rem',
+      'secondary-dark': {
+        DEFAULT: '#EA580C', // background
+        'content': '#FFFFFF', // foreground
       },
-      letterSpacing: {
-        tighter: '-.04em',
+      'base-dark': {
+        '100': '#1D232A', // background
+        '200': '#191E24',
+        '300': '#15191F',
+        'content': '#D9D9D9', // foreground
       },
-      lineHeight: {
-        tight: 1.2,
+      'primary-light': {
+        DEFAULT: '#3BBEF8', // background
+        'content': '#FFFFFF', // foreground
       },
-      fontSize: {
-        '5xl': '2.5rem',
-        '6xl': '2.75rem',
-        '7xl': '4.5rem',
-        '8xl': '6.25rem',
+      'secondary-light': {
+        DEFAULT: '#EA580C', // background
+        'content': '#FFFFFF', // foreground
       },
-      boxShadow: {
-        sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
-        md: '0 8px 30px rgba(0, 0, 0, 0.12)',
-      },
-    },
+      'base-light': {
+        '100': '#F2F2F2', // background
+        '200': '#E5E6E6',
+        '300': '#D9D9D9',
+        'content': '#1F2A37', // foreground
+      }
+    }
   },
   plugins: [],
 }
