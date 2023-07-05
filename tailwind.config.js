@@ -41,6 +41,9 @@ module.exports = {
         '300': '#D9D9D9',
         'content': '#1F2A37', // foreground
       }
+    },
+    fontFamily: {
+      // 'h': ['Galano Grotesque Alt', 'sans-serif'],
     }
   },
   plugins: [],

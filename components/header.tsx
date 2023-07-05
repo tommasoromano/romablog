@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
     <div className='w-full h-28 justify-center items-center flex'>
-    <Stack direction="row" justify='center' spacing={4}>
+    <Stack direction='row' justify='center' spacing="4">
       <Typography variant="h1" component="h1" color="primary">
         <Link href={'/'}>romablog</Link>
       </Typography>

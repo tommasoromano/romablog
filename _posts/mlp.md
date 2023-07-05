@@ -17,6 +17,10 @@ Un **r-layer perceptron** è una **Feed-Forward Network** con una **struttura st
 - **Fact**: La funzione di attivazione di ogni neurone nascosto è la **sigmoid function** che è una funzione monotona non-decrescente.
 - **Fout**: La funzione di attivazione di ogni neurone output è una funzione sigmoide o una funzione lineare
 
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+
 (img step, semi-linear, sine until saturat, logistic, bipolar func)
 
 ### Universal Approximator

@@ -35,6 +35,10 @@ const margins = {
   p: 'mt-2 mb-4',
 }
 
+export const Strong = ({ children }: { children: JSX.Element | string }) => {
+  return <strong className="font-bold text-secondary-light dark:text-secondary-dark">{children}</strong>
+}
+
 const Typography = ({ variant='p', component='p', color='base-content', children }: Props) => {
 
   const className = fontSize[variant] + ' ' + textColor[color];

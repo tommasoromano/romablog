@@ -17,7 +17,7 @@ type Props = {
 export default function Index({ allPosts }: Props) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
-  const posts = allPosts.slice(0, 5)
+  const posts = allPosts//.slice(0, 5)
   return (
     <>
       <Layout>
@@ -26,7 +26,7 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <Container>
           <Header />
-          {/* <Intro /> */}
+          <Intro />
           {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
